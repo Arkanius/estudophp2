@@ -48,8 +48,8 @@
       <file leaf-file-name="cadastro_fornecedor.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/php/cadastro_fornecedor.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46735394" vertical-offset="0" max-vertical-offset="582">
-              <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.84707904" vertical-offset="0" max-vertical-offset="612">
+              <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -442,8 +442,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/php/cadastro_fornecedor.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46735394" vertical-offset="0" max-vertical-offset="582">
-          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.84707904" vertical-offset="0" max-vertical-offset="612">
+          <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
           <folding />
         </state>
       </provider>
