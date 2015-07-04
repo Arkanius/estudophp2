@@ -17,10 +17,14 @@ $fone = $_POST['fornecedor_fone'];
 $email = $_POST['fornecedor_email'];
 
 $cnpj = limparCaracteres($cnpj);
+
 if(!validarEmail($email)){
     exit('Email digitado inválido');
 }
-$id = 3;
+
+$id = getLastId();
+
+$fone = limparCaracteres($fone);
 
 
     if($stmt = $db->prepare("INSERT INTO fornecedores(forn_id, forn_cnpj, forn_razaosoc, forn_rua, forn_numero, forn_complemento, forn_cep, forn_bairro,
@@ -28,7 +32,11 @@ $id = 3;
         $stmt->bind_param('isssissssssss', $id, $cnpj, $razao, $rua, $numero, $complemento, $cep, $bairro, $cidade, $uf, $pais, $fone, $email);
 
         if($stmt->execute()){
-            echo 'Inseriu OK';
+            echo '<script>
+                        alert("Dados cadastrados com sucesso");
+                        window.location.href = "cadastro_fornecedores.html";
+                    </script>
+                ';
         }else{
             die('Erro: ( '.$db->errno.' ) '. $db->error);
         }
@@ -50,7 +58,8 @@ function validarEmail($email){
     return  (preg_match("/^(([0-9a-zA-Z]+[-._+&])*[0-9a-zA-Z]+@([-0-9a-zA-Z]+[.])+[a-zA-Z]{2,6}){0,1}$/", $email) ? true : false);
 }
 
-function getLastId($nomeTabela){
+function getLastId(){
     global $db;
-    $db->query("SELECT forn_id FROM fornecedores WHERE id = 1")->fetch_object()->product_name;
+    $result =  $db->query("SELECT MAX(forn_id) as id FROM fornecedores")->fetch_assoc();
+    return $result['id'] + 1;
 }
