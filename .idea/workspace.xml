@@ -91,18 +91,18 @@
       <file leaf-file-name="editar_fornecedores.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fornecedores/editar_fornecedores.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1071">
-              <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.2688928" vertical-offset="0" max-vertical-offset="884">
+              <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
               <folding>
                 <element signature="e#6#88#0#PHP" expanded="true" />
-                <marker date="1436046584009" expanded="true" signature="223:275" placeholder="SELECT * FRO..fornecedores..." />
-                <marker date="1436046584009" expanded="true" signature="223:283" placeholder="SELECT * FRO..fornecedores..." />
-                <marker date="1436046584009" expanded="true" signature="223:285" placeholder="SELECT * FRO..fornecedores..." />
-                <marker date="1436046584009" expanded="true" signature="223:393" placeholder="SELECT * FRO..fornecedores..." />
-                <marker date="1436046584009" expanded="true" signature="397:717" placeholder="..." />
-                <marker date="1436046584009" expanded="true" signature="724:2961" placeholder="..." />
-                <marker date="1436046584009" expanded="true" signature="736:2952" placeholder="..." />
-                <marker date="1436046584009" expanded="true" signature="866:2940" placeholder="..." />
+                <marker date="1436047118872" expanded="true" signature="140:192" placeholder="SELECT * FRO..fornecedores..." />
+                <marker date="1436047118872" expanded="true" signature="140:200" placeholder="SELECT * FRO..fornecedores..." />
+                <marker date="1436047118872" expanded="true" signature="140:202" placeholder="SELECT * FRO..fornecedores..." />
+                <marker date="1436047118872" expanded="true" signature="140:258" placeholder="SELECT * FRO..fornecedores..." />
+                <marker date="1436047118872" expanded="true" signature="262:582" placeholder="..." />
+                <marker date="1436047118872" expanded="true" signature="589:2851" placeholder="..." />
+                <marker date="1436047118872" expanded="true" signature="601:2842" placeholder="..." />
+                <marker date="1436047118872" expanded="true" signature="758:2830" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -661,18 +661,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fornecedores/editar_fornecedores.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1071">
-          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.2688928" vertical-offset="0" max-vertical-offset="884">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
           <folding>
             <element signature="e#6#88#0#PHP" expanded="true" />
-            <marker date="1436046584009" expanded="true" signature="223:275" placeholder="SELECT * FRO..fornecedores..." />
-            <marker date="1436046584009" expanded="true" signature="223:283" placeholder="SELECT * FRO..fornecedores..." />
-            <marker date="1436046584009" expanded="true" signature="223:285" placeholder="SELECT * FRO..fornecedores..." />
-            <marker date="1436046584009" expanded="true" signature="223:393" placeholder="SELECT * FRO..fornecedores..." />
-            <marker date="1436046584009" expanded="true" signature="397:717" placeholder="..." />
-            <marker date="1436046584009" expanded="true" signature="724:2961" placeholder="..." />
-            <marker date="1436046584009" expanded="true" signature="736:2952" placeholder="..." />
-            <marker date="1436046584009" expanded="true" signature="866:2940" placeholder="..." />
+            <marker date="1436047118872" expanded="true" signature="140:192" placeholder="SELECT * FRO..fornecedores..." />
+            <marker date="1436047118872" expanded="true" signature="140:200" placeholder="SELECT * FRO..fornecedores..." />
+            <marker date="1436047118872" expanded="true" signature="140:202" placeholder="SELECT * FRO..fornecedores..." />
+            <marker date="1436047118872" expanded="true" signature="140:258" placeholder="SELECT * FRO..fornecedores..." />
+            <marker date="1436047118872" expanded="true" signature="262:582" placeholder="..." />
+            <marker date="1436047118872" expanded="true" signature="589:2851" placeholder="..." />
+            <marker date="1436047118872" expanded="true" signature="601:2842" placeholder="..." />
+            <marker date="1436047118872" expanded="true" signature="758:2830" placeholder="..." />
           </folding>
         </state>
       </provider>
