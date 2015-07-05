@@ -26,7 +26,7 @@ $result = $db->query('SELECT * FROM fornecedores WHERE forn_id = "'.$_GET["id"].
 
 <fieldset>
     <legend>Cadastro de fornecedores</legend>
-    <form id="form_fornecedor" name="form_fornecedor" method="POST" action="fornecedores/editar_fornecedores">
+    <form id="form_fornecedor" name="form_fornecedor" method="POST" action="update_fornecedores.php">
         <label>Cnpj: </label><input type="text" name="fornecedor_cnpj" id="fornecedor_cnpj" placeholder="99.999.999/9999-99" value="<?php echo $result['forn_cnpj']; ?>"/><br><br>
         <label>Razão social: </label><input type="text" name="fornecedor_razao" id="fornecedor_razao" value="<?php echo $result['forn_razaosoc']; ?>"/><br><br>
         <label>Rua: </label><input type="text" name="fornecedor_rua" id="fornecedor_rua" value="<?php echo $result['forn_rua']; ?>"/><br><br>

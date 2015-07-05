@@ -28,6 +28,8 @@ echo '<!DOCTYPE html>
                       </tr>
                       '.gerarTabelaFornecedores($fornecedores).'
                     </table>
+                    <br><br><br>
+                    <button type="button" onclick="window.location=\'cadastro_fornecedores.html\';">Novo fornecedor</button>
                 </body>
             </html>
     ';

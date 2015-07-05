@@ -9,8 +9,7 @@
 require('../config.php');
 include('../functions.php');
 
-
-$nome = $_POST['fornecedor_nome'];
+$id = $_POST['id'];
 $cnpj = $_POST['fornecedor_cnpj'];
 $razao = $_POST['fornecedor_razao'];
 $rua = $_POST['fornecedor_rua'];
@@ -41,9 +40,9 @@ if($stmt = $db->prepare("UPDATE fornecedores SET forn_cnpj = ?, forn_razaosoc = 
 
     if($stmt->execute()){
         echo '<script>
-                        alert("Dados cadastrados com sucesso");
-                        window.location.href = "cadastro_fornecedores.html";
-                    </script>
+                    alert("Dados cadastrados com sucesso");
+                    window.location.href = "listar_fornecedores.php";
+              </script>
                 ';
     }else{
         die('Erro: ( '.$db->errno.' ) '. $db->error);

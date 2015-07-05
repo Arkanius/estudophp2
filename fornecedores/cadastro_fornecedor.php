@@ -36,7 +36,7 @@ $cep = limparCaracteres($cep);
         if($stmt->execute()){
             echo '<script>
                         alert("Dados cadastrados com sucesso");
-                        window.location.href = "cadastro_fornecedores.html";
+                        window.location.href = "listar_fornecedores.php";
                     </script>
                 ';
         }else{
