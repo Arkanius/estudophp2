@@ -7,7 +7,7 @@
  */
 
 require('../config.php');
- 
+
 $result = $db->query('SELECT * FROM fornecedores WHERE forn_id = "'.$_GET["id"].'"')->fetch_array();
 ?>
 
@@ -39,6 +39,7 @@ $result = $db->query('SELECT * FROM fornecedores WHERE forn_id = "'.$_GET["id"].
         <label>País: </label><input type="text" name="fornecedor_pais" id="fornecedor_pais" value="<?php echo $result['forn_pais']; ?>"/><br><br>
         <label>Telefone: </label><input type="text" name="fornecedor_fone" id="fornecedor_fone" placeholder="(99) 91234-5678" value="<?php echo $result['forn_fone']; ?>"/><br><br>
         <label>Email: </label><input type="text" name="fornecedor_email" id="fornecedor_email" placeholder="example@example.com" onblur="validarEmail()" value="<?php echo $result['forn_email']; ?>"/><br><br><br>
+        <input type="hidden" name="id" id="id" value="<?php  echo $result['forn_id'];?>"/>
         <button type="submit" name="fornecedor_cadastrar" id="fornecedor_cadastrar">Alterar</button>
     </form>
 </fieldset>

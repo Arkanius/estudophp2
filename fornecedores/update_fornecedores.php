@@ -1,7 +1,14 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: Victor
+ * Date: 05/07/2015
+ * Time: 00:34
+ */
 
 require('../config.php');
 include('../functions.php');
+
 
 $nome = $_POST['fornecedor_nome'];
 $cnpj = $_POST['fornecedor_cnpj'];
@@ -23,28 +30,28 @@ if(!validarEmail($email)){
     exit('Email digitado inválido');
 }
 
-$id = getLastId();
 
 $fone = limparCaracteres($fone);
 $cep = limparCaracteres($cep);
 
 
-    if($stmt = $db->prepare("INSERT INTO fornecedores(forn_id, forn_cnpj, forn_razaosoc, forn_rua, forn_numero, forn_complemento, forn_cep, forn_bairro,
-                                        forn_cidade, forn_uf, forn_pais, forn_fone, forn_email) VALUES (?, ?, ?, ?, ?, ? ,?, ? ,? ,? ,? ,? , ?)")) {
-        $stmt->bind_param('isssissssssss', $id, $cnpj, $razao, $rua, $numero, $complemento, $cep, $bairro, $cidade, $uf, $pais, $fone, $email);
+if($stmt = $db->prepare("UPDATE fornecedores SET forn_cnpj = ?, forn_razaosoc = ?, forn_rua = ?, forn_numero = ?, forn_complemento = ?, forn_cep = ?, forn_bairro = ?,
+                                        forn_cidade = ?, forn_uf = ?, forn_pais = ?, forn_fone = ?, forn_email = ? WHERE forn_id = ?")) {
+    $stmt->bind_param('sssissssssssi', $cnpj, $razao, $rua, $numero, $complemento, $cep, $bairro, $cidade, $uf, $pais, $fone, $email, $id);
 
-        if($stmt->execute()){
-            echo '<script>
+    if($stmt->execute()){
+        echo '<script>
                         alert("Dados cadastrados com sucesso");
                         window.location.href = "cadastro_fornecedores.html";
                     </script>
                 ';
-        }else{
-            die('Erro: ( '.$db->errno.' ) '. $db->error);
-        }
-
     }else{
-        printf("Erro ao preparar statement: %s\n", $db->error);
+        die('Erro: ( '.$db->errno.' ) '. $db->error);
     }
 
+}else{
+    printf("Erro ao preparar statement: %s\n", $db->error);
+}
+
 $stmt->close();
+
