@@ -7,6 +7,9 @@
  */
 
 require('../config.php');
+include('../functions.php');
+
+header('Content-Type: text/html; charset=latin1_swedish_ci');
 
 $fornecedor_id = $_POST['id_fornecedor'];
 $produto_nome = $_POST['produto_nome'];
@@ -19,13 +22,18 @@ $qtd_estoque = $_POST['qtd_estoque'];
 
 $query = 'INSERT INTO produto (fornec_id, prod_nome, prod_tipo, prod_desc, prod_valorunit, prod_valorvenda, prod_desconto, prod_qtdestoque) VALUES (?, ?, ?, ?, ?, ?, ?, ?)';
 
+$valor_unitario = formatarDinheiro($valor_unitario);
+$valor_venda = formatarDinheiro($valor_venda);
+$descricao = utf8_encode($descricao);
+
+
 if($stm = $db->prepare($query)){
     $stm->bind_param('isssddii', $fornecedor_id, $produto_nome, $produto_tipo, $descricao, $valor_unitario, $valor_venda, $produto_desconto, $qtd_estoque);
 
     if($stm->execute()){
         echo '<script>
-                        alert("Dados cadastrados com sucesso");
-                        window.location.href = "cadastro_produtos.html";
+                    alert("Dados cadastrados com sucesso");
+                    window.location.href = "cadastro_produtos.html";
               </script>
                 ';
     }else{

@@ -20,3 +20,11 @@ function getLastId(){
     $result =  $db->query("SELECT MAX(forn_id) as id FROM fornecedores")->fetch_assoc();
     return $result['id'] + 1;
 }
+
+
+function formatarDinheiro($valor){
+    $valor = str_replace('.', '', $valor);
+    $valor = str_replace(',', '.', $valor);
+    $valor = str_replace('R$ ', '', $valor);
+    return $valor;
+}
