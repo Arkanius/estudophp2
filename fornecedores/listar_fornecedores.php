@@ -30,6 +30,7 @@ echo '<!DOCTYPE html>
                     </table>
                     <br><br><br>
                     <button type="button" onclick="window.location=\'cadastro_fornecedores.html\';">Novo fornecedor</button>
+                    <button type="button" onclick="window.location=\'../index.html\';">Início</button>
                 </body>
             </html>
     ';

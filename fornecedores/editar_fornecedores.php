@@ -41,6 +41,7 @@ $result = $db->query('SELECT * FROM fornecedores WHERE forn_id = "'.$_GET["id"].
         <label>Email: </label><input type="text" name="fornecedor_email" id="fornecedor_email" placeholder="example@example.com" onblur="validarEmail()" value="<?php echo $result['forn_email']; ?>"/><br><br><br>
         <input type="hidden" name="id" id="id" value="<?php  echo $result['forn_id'];?>"/>
         <button type="submit" name="fornecedor_cadastrar" id="fornecedor_cadastrar">Alterar</button>
+        <button type="button" onclick="window.location='../index.html';">Início</button>
     </form>
 </fieldset>
 

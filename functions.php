@@ -28,3 +28,24 @@ function formatarDinheiro($valor){
     $valor = str_replace('R$ ', '', $valor);
     return $valor;
 }
+
+function getFornecedorProduto(){
+    global $db;
+    return $db->query('SELECT
+                        f.forn_id,
+                        f.forn_email
+                    FROM
+                        fornecedores f
+                    LEFT JOIN produto p ON p.fornec_id = f.forn_id
+                    GROUP BY
+                        f.forn_id')->fetch_all();
+}
+
+function criarSelectFornecedor($resultado_query, $edicao = false){
+    $html = '';
+    foreach($resultado_query as $key => $fornecedor){
+        $html .= '<option value="'.$fornecedor[0].'" '.(!empty($edicao) && $edicao == $fornecedor[0] ? "selected" : "").'>'.$fornecedor[1].'</option>';
+    }
+
+    return $html;
+}

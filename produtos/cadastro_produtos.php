@@ -1,28 +1,8 @@
 <?php
 include('../config.php');
+require('../functions.php');
 
 $option_select = criarSelectFornecedor(getFornecedorProduto());
-
-function getFornecedorProduto(){
-    global $db;
-    return $db->query('SELECT
-                        f.forn_id,
-                        f.forn_email
-                    FROM
-                        fornecedores f
-                    LEFT JOIN produto p ON p.fornec_id = f.forn_id
-                    GROUP BY
-                        f.forn_id')->fetch_all();
-}
-
-function criarSelectFornecedor($resultado_query){
-    $html = '';
-    foreach($resultado_query as $key => $fornecedor){
-        $html .= '<option value="'.$fornecedor[0].'">'.$fornecedor[1].'</option>';
-    }
-
-    return $html;
-}
 
 ?>
 
@@ -53,6 +33,7 @@ function criarSelectFornecedor($resultado_query){
                     <label>Desconto: % </label><input type="text" name="produto_desconto" id="produto_desconto" maxlength="2"/><br><br>
                     <label>Quantidade em estoque: </label><input type="text" name="qtd_estoque" id="qtd_estoque"/><br><br>
                     <button type="submit" name="produto_cadastrar" id="produto_cadastrar">Cadastrar</button>
+                    <button type="button" onclick="window.location='../index.html';">Início</button>
                 </form>
       </fieldset>
 </body>

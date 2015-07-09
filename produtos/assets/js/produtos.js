@@ -6,7 +6,7 @@ $(document).ready(function () {
 
     mascarar_valores();
     $('#valor_unitario').on('change', function(){
-        var valor_unitario = parseFloat($(this).val().replace('.', '').replace('R$ ', '').replace(',', '.'));console.log($(this).val());
+        var valor_unitario = parseFloat($(this).val().replace('.', '').replace('R$ ', '').replace(',', '.'));
         var valor_venda = valor_unitario + (valor_unitario * 0.3);
         $('#valor_venda').val('R$ '+ number_format(valor_venda, 2, ',', '.'));
     });
