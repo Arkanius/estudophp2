@@ -45,3 +45,6 @@ Temporary Items
 .idea/**/*
 
 .gitignore
+
+tst
+.idea/workspace.xml

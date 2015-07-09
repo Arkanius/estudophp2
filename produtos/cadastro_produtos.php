@@ -1,3 +1,32 @@
+<?php
+include('../config.php');
+
+$option_select = criarSelectFornecedor(getFornecedorProduto());
+
+function getFornecedorProduto(){
+    global $db;
+    return $db->query('SELECT
+                        f.forn_id,
+                        f.forn_email
+                    FROM
+                        fornecedores f
+                    LEFT JOIN produto p ON p.fornec_id = f.forn_id
+                    GROUP BY
+                        f.forn_id')->fetch_all();
+}
+
+function criarSelectFornecedor($resultado_query){
+    $html = '';
+    foreach($resultado_query as $key => $fornecedor){
+        $html .= '<option value="'.$fornecedor[0].'">'.$fornecedor[1].'</option>';
+    }
+
+    return $html;
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,6 +42,7 @@
                 <form id="form_produtos" name="form_produtos" method="POST" action="cadastrar_produtos.php">
                     <label>Id fornecedor: </label><select name="id_fornecedor" id="id_fornecedor">
                                                     <option value="0">Selecione um fornecedor</option>
+                                                    <?php   echo $option_select;    ?>
                                                   </select>
                     <br><br>
                     <label>Nome: </label><input type="text" name="produto_nome" id="produto_nome"/><br><br>

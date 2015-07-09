@@ -33,7 +33,7 @@ if($stm = $db->prepare($query)){
     if($stm->execute()){
         echo '<script>
                     alert("Dados cadastrados com sucesso");
-                    window.location.href = "cadastro_produtos.html";
+                    window.location.href = "cadastro_produtos.php";
               </script>
                 ';
     }else{

@@ -19,26 +19,6 @@ $(document).ready(function () {
             return;
         }
     });
-
-
-    $.ajax({
-        url: '../buscar_fornecedor.php',
-        type: 'POST',
-        datatype: 'JSON',
-        data: {id_fornecedor: $('#id_fornecedor').val()},
-
-        success: function(retorno){
-            $('#id_fornecedor').find('option').remove();
-
-            var html = '<option value="0">Selecione um fornecedor</option>';
-
-            $.each(retorno, function(id, funcionario){
-                html+= '<option value="'+id+'">'+funcionario+'</option>'
-            });
-            $('#id_fornecedor').html(html);
-        }
-    });
-
 });
 
 
