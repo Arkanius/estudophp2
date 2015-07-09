@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9939aab8-e762-41c6-91a6-f5b80e088901" name="Default" comment="">
-      <change type="MOVED" beforePath="C:\wamp\www\estudophp2\produtos\cadastro_produtos.html" afterPath="$PROJECT_DIR$/produtos/cadastro_produtos.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/produtos/cadastrar_produtos.php" afterPath="$PROJECT_DIR$/produtos/cadastrar_produtos.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/produtos/assets/js/produtos.js" afterPath="$PROJECT_DIR$/produtos/assets/js/produtos.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/produtos/excluir_produto.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/produtos/listar_produtos.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="estudophp2.iws" />
@@ -42,11 +39,47 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="listar_produtos.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/produtos/listar_produtos.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-15.538462" vertical-offset="480" max-vertical-offset="1088">
+              <caret line="52" column="40" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
+              <folding>
+                <element signature="e#6#88#0#PHP" expanded="true" />
+                <marker date="1436415126335" expanded="true" signature="155:994" placeholder="..." />
+                <marker date="1436415126335" expanded="true" signature="182:306" placeholder="..." />
+                <marker date="1436415126335" expanded="true" signature="329:974" placeholder="..." />
+                <marker date="1436415126335" expanded="true" signature="424:800" placeholder="..." />
+                <marker date="1436415126335" expanded="true" signature="451:710" placeholder="..." />
+                <marker date="1436415126335" expanded="true" signature="1070:1091" placeholder="SELECT * FRO..produto..." />
+                <marker date="1436415126335" expanded="true" signature="1221:1673" placeholder="..." />
+                <marker date="1436415126335" expanded="true" signature="1487:1650" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="excluir_produto.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/produtos/excluir_produto.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.29209623" vertical-offset="0" max-vertical-offset="582">
+              <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+              <folding>
+                <element signature="e#6#88#0#PHP" expanded="true" />
+                <marker date="1436415290145" expanded="true" signature="220:273" placeholder="DELETE FROM ..." />
+                <marker date="1436415290145" expanded="true" signature="220:687" placeholder="DELETE FROM ..." />
+                <marker date="1436415290145" expanded="true" signature="299:448" placeholder="..." />
+                <marker date="1436415290145" expanded="true" signature="501:647" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="cadastrar_produtos.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/produtos/cadastrar_produtos.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="901">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state vertical-scroll-proportion="-15.692307" vertical-offset="153" max-vertical-offset="901">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="37" selection-end-column="18" />
               <folding>
                 <element signature="e#6#88#0#PHP" expanded="true" />
                 <marker date="1436325289618" expanded="true" signature="544:705" placeholder="INSERT INTO ..." />
@@ -56,26 +89,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/functions.php">
+      <file leaf-file-name="listar_fornecedores.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fornecedores/listar_fornecedores.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="137" max-vertical-offset="595">
-              <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+            <state vertical-scroll-proportion="-9.653846" vertical-offset="548" max-vertical-offset="1207">
+              <caret line="47" column="9" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
               <folding>
-                <element signature="e#6#88#0#PHP" expanded="true" />
-                <marker date="1436236796195" expanded="true" signature="404:447" placeholder="SELECT MAX(f..fornecedores..." />
+                <marker date="1436069190979" expanded="true" signature="192:1012" placeholder="..." />
+                <marker date="1436069190979" expanded="true" signature="219:347" placeholder="..." />
+                <marker date="1436069190979" expanded="true" signature="370:992" placeholder="..." />
+                <marker date="1436069190979" expanded="true" signature="469:810" placeholder="..." />
+                <marker date="1436069190979" expanded="true" signature="496:716" placeholder="..." />
+                <marker date="1436069190979" expanded="true" signature="1096:1122" placeholder="SELECT * FRO..fornecedores..." />
+                <marker date="1436069190979" expanded="true" signature="1300:1660" placeholder="..." />
+                <marker date="1436069190979" expanded="true" signature="1479:1642" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cadastro_produtos.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/produtos/cadastro_produtos.php">
+      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="1088">
-              <caret line="3" column="63" selection-start-line="3" selection-start-column="63" selection-end-line="3" selection-end-column="63" />
+            <state vertical-scroll-proportion="-17.807692" vertical-offset="13" max-vertical-offset="595">
+              <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
               <folding>
-                <marker date="1436412893554" expanded="true" signature="170:442" placeholder="SELECT f.for..fornecedores..." />
+                <element signature="e#6#88#0#PHP" expanded="true" />
+                <marker date="1436236796195" expanded="true" signature="404:447" placeholder="SELECT MAX(f..fornecedores..." />
               </folding>
             </state>
           </provider>
@@ -118,10 +158,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4642857" vertical-offset="459" max-vertical-offset="935">
+            <state vertical-scroll-proportion="-1.6742424" vertical-offset="459" max-vertical-offset="935">
               <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
               <folding />
             </state>
@@ -163,6 +203,8 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/produtos/assets/js/produtos.js" />
         <option value="$PROJECT_DIR$/produtos/cadastro_produtos.php" />
+        <option value="$PROJECT_DIR$/produtos/listar_produtos.php" />
+        <option value="$PROJECT_DIR$/produtos/excluir_produto.php" />
       </list>
     </option>
   </component>
@@ -357,20 +399,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/fornecedores/listar_fornecedores.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="196" max-vertical-offset="1207">
-          <caret line="31" column="90" selection-start-line="31" selection-start-column="90" selection-end-line="31" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fornecedores/editar_fornecedores.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="332" max-vertical-offset="901">
-          <caret line="28" column="76" selection-start-line="28" selection-start-column="76" selection-end-line="28" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fornecedores/update_fornecedores.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1054">
@@ -659,29 +687,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="137" max-vertical-offset="595">
-          <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
-          <folding>
-            <element signature="e#6#88#0#PHP" expanded="true" />
-            <marker date="1436236796195" expanded="true" signature="404:447" placeholder="SELECT MAX(f..fornecedores..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/produtos/cadastrar_produtos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="901">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#88#0#PHP" expanded="true" />
-            <marker date="1436325289618" expanded="true" signature="544:705" placeholder="INSERT INTO ..." />
-            <marker date="1436325289618" expanded="true" signature="1085:1237" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/produtos/buscar_fornecedor.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="289">
@@ -708,33 +713,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="1037">
           <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fornecedores/listar_fornecedores.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7079038" vertical-offset="115" max-vertical-offset="1207">
-          <caret line="31" column="90" selection-start-line="31" selection-start-column="90" selection-end-line="31" selection-end-column="90" />
-          <folding>
-            <marker date="1436069190979" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1436069190979" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1436069190979" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1436069190979" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1436069190979" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1436069190979" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..fornecedores..." />
-            <marker date="1436069190979" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1436069190979" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/produtos/cadastro_produtos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="1088">
-          <caret line="3" column="63" selection-start-line="3" selection-start-column="63" selection-end-line="3" selection-end-column="63" />
-          <folding>
-            <marker date="1436412893554" expanded="true" signature="170:442" placeholder="SELECT f.for..fornecedores..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -771,9 +749,91 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4642857" vertical-offset="459" max-vertical-offset="935">
+        <state vertical-scroll-proportion="-1.6742424" vertical-offset="459" max-vertical-offset="935">
           <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/produtos/cadastro_produtos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.71704745" vertical-offset="459" max-vertical-offset="1088">
+          <caret line="3" column="63" selection-start-line="3" selection-start-column="63" selection-end-line="3" selection-end-column="63" />
+          <folding>
+            <marker date="1436412893554" expanded="true" signature="-1:-1" placeholder="SELECT f.for..fornecedores..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.807692" vertical-offset="13" max-vertical-offset="595">
+          <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+          <folding>
+            <element signature="e#6#88#0#PHP" expanded="true" />
+            <marker date="1436236796195" expanded="true" signature="404:447" placeholder="SELECT MAX(f..fornecedores..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fornecedores/listar_fornecedores.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.653846" vertical-offset="548" max-vertical-offset="1207">
+          <caret line="47" column="9" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
+          <folding>
+            <marker date="1436069190979" expanded="true" signature="192:1012" placeholder="..." />
+            <marker date="1436069190979" expanded="true" signature="219:347" placeholder="..." />
+            <marker date="1436069190979" expanded="true" signature="370:992" placeholder="..." />
+            <marker date="1436069190979" expanded="true" signature="469:810" placeholder="..." />
+            <marker date="1436069190979" expanded="true" signature="496:716" placeholder="..." />
+            <marker date="1436069190979" expanded="true" signature="1096:1122" placeholder="SELECT * FRO..fornecedores..." />
+            <marker date="1436069190979" expanded="true" signature="1300:1660" placeholder="..." />
+            <marker date="1436069190979" expanded="true" signature="1479:1642" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/produtos/cadastrar_produtos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.692307" vertical-offset="153" max-vertical-offset="901">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="37" selection-end-column="18" />
+          <folding>
+            <element signature="e#6#88#0#PHP" expanded="true" />
+            <marker date="1436325289618" expanded="true" signature="544:705" placeholder="INSERT INTO ..." />
+            <marker date="1436325289618" expanded="true" signature="1085:1237" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/produtos/listar_produtos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.538462" vertical-offset="480" max-vertical-offset="1088">
+          <caret line="52" column="40" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
+          <folding>
+            <element signature="e#6#88#0#PHP" expanded="true" />
+            <marker date="1436415126335" expanded="true" signature="155:994" placeholder="..." />
+            <marker date="1436415126335" expanded="true" signature="182:306" placeholder="..." />
+            <marker date="1436415126335" expanded="true" signature="329:974" placeholder="..." />
+            <marker date="1436415126335" expanded="true" signature="424:800" placeholder="..." />
+            <marker date="1436415126335" expanded="true" signature="451:710" placeholder="..." />
+            <marker date="1436415126335" expanded="true" signature="1070:1091" placeholder="SELECT * FRO..produto..." />
+            <marker date="1436415126335" expanded="true" signature="1221:1673" placeholder="..." />
+            <marker date="1436415126335" expanded="true" signature="1487:1650" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/produtos/excluir_produto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29209623" vertical-offset="0" max-vertical-offset="582">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+          <folding>
+            <element signature="e#6#88#0#PHP" expanded="true" />
+            <marker date="1436415290145" expanded="true" signature="220:273" placeholder="DELETE FROM ..." />
+            <marker date="1436415290145" expanded="true" signature="220:687" placeholder="DELETE FROM ..." />
+            <marker date="1436415290145" expanded="true" signature="299:448" placeholder="..." />
+            <marker date="1436415290145" expanded="true" signature="501:647" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
